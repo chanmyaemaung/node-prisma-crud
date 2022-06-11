@@ -1,0 +1,27 @@
+GET http://localhost:5001/api/products
+
+### Get a specific product
+GET http://localhost:5001/api/products/1
+
+### Create a new product
+POST http://localhost:5001/api/products
+Content-Type: application/json
+
+{
+    "name": "Oppo F21 Pro",
+    "price": 300,
+    "description": "This is the cheapest phone over the last few years",
+    "categoryId": 3
+}
+
+### Delete a product
+DELETE http://localhost:5001/api/products/3
+
+### Update a product
+PATCH http://localhost:5001/api/products/2
+Content-Type: application/json
+
+{
+    "price": 2000, 
+    "categoryId": 2
+}
