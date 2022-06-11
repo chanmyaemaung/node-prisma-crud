@@ -13,4 +13,5 @@ To Migrate DB
 `npx prisma migrate dev`
 
 To generate more field
+
 `npx prisma generate`
